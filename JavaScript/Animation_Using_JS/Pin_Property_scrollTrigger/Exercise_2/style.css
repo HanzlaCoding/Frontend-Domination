@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Monument";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+#page1{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page1 h1{
+    font-size: 20vw;
+    text-transform: uppercase;
+    font-family: 'Gilroy';
+    color: yellow;
+}
+
+#page2{
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0 5vw;
+    /* overflow: hidden; */
+}
+
+#page3{
+    width: 100%;
+    height: 100%;
+    background-color: darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    color: yellowgreen;
+    font-size: 20vw;
+    font-family: 'Bebas Neue';
+}
+
+#page3 h3{
+    font-size: 15vw;
+    text-transform: uppercase;
+    font-family: 'Gilroy';
+    color: yellow;
+    text-align: center;
+}
+
+h2{
+    font-size: 40vw;
+}

@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+  /* overflow: hidden; */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+#page1 {
+  width: 100%;
+  height: 100%;
+  background-color: salmon;
+}
+
+#page2 {
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
+  /* position: absolute; */
+}
+
+#page3 {
+  width: 100%;
+  height: 100%;
+  background-color: burlywood;
+}
+
+#page2 img {
+  left: 50%;
+  position: relative;
+  height: 100%;
+  width: 80%;
+  object-fit: cover;
+  transform: translate(-50%);
+}

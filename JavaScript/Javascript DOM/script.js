@@ -9,3 +9,4 @@ document.querySelector('body').append(div);
 div.style.color = 'red';
 div.style.fontSize = '150px';
 div.style.fontFamily = 'Gilroy';
+

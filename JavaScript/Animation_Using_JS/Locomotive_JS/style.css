@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Main ko height width nhi dete */
+
+#page1 {
+  width: 100%;
+  height: 100vh;
+  /* background-color: #212121; */
+}
+
+#page2 {
+  width: 100%;
+  height: 100vh;
+  /* background-color: salmon; */
+}
+
+#page2 #image-div{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#image-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page3 {
+  width: 100%;
+  height: 100vh;
+  /* background-color: azure; */
+}
