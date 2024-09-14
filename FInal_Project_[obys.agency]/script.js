@@ -1,61 +1,61 @@
-// function animationPageOne(){
-//     var tl = gsap.timeline();
-// tl.from('.line h1', {
-//     y: 150,
-//     stagger: 0.1,
-//     duration: 0.6,
-//     delay: 0.2,
-//     ease: "expo.out",
-//     opacity: 0
-// })
+function animationPageOne(){
+    var tl = gsap.timeline();
+tl.from('.line h1', {
+    y: 150,
+    stagger: 0.1,
+    duration: 0.6,
+    delay: 0.2,
+    ease: "expo.out",
+    opacity: 0
+})
 
-// tl.from('.line-part1, .line h2', {
-//     opacity: 0,
-//     onStart: () => {
-//         const l1p1 = document.querySelector('.line1-part1 h5');
-//         // Loop of loader
-//         let levelUp = 0;
-//         const intId = setInterval(() => {
-//             if (levelUp < 100) {
-//                 l1p1.innerHTML = levelUp++;
-//             }
-//             else {
-//                 l1p1.innerHTML = levelUp;
-//                 clearInterval(intId);
-//             }
-//             console.log(levelUp);
+tl.from('.line-part1, .line h2', {
+    opacity: 0,
+    onStart: () => {
+        const l1p1 = document.querySelector('.line1-part1 h5');
+        // Loop of loader
+        let levelUp = 0;
+        const intId = setInterval(() => {
+            if (levelUp < 100) {
+                l1p1.innerHTML = levelUp++;
+            }
+            else {
+                l1p1.innerHTML = levelUp;
+                clearInterval(intId);
+            }
+            console.log(levelUp);
 
-//         }, 30);
-//     }
-// })
+        }, 30);
+    }
+})
 
-// tl.to('#loader', {
-//     opacity: 0,
-//     duration: 0.1,
-//     delay: 2.8
-// });
+tl.to('#loader', {
+    opacity: 0,
+    duration: 0.1,
+    delay: 2.8
+});
 
-// tl.from('#page1', {
-//     y: 1000,
-//     delay: 0.1,
-//     ease: "expi.in",
-//     opacity: 0,
-//     duration: 0.8
-// })
+tl.from('#page1', {
+    opacity: 0,
+    delay: 0.1,
+    ease: "expo.in",
+    opacity: 0,
+    duration: 0.8
+})
 
-// tl.to('#loader', {
-//     display: 'none'
-// })
+tl.to('#loader', {
+    display: 'none'
+})
 
-// tl.from(`#hero1 h1, #hero2 h1,#inoxentH1 h1,#hero4 h1`,{
-//     y: 150,
-//     stagger:0.1,
-//     duration:0.8
-// })
-// tl.from('#hero1, #page2',{
-//     opacity:0
-// },'-=2')
-// }
+tl.from(`#hero1 h1, #hero2 h1,#inoxentH1 h1,#hero4 h1`,{
+    y: 150,
+    stagger:0.1,
+    duration:0.8
+})
+tl.from('#hero1, #page2',{
+    opacity:0
+},'-=2')
+}
 function crsr() {
     // Cursor
     document.addEventListener('mousemove', (dets) => {
@@ -99,14 +99,32 @@ function loco() {
 }
 function sheryJsAnimation() {
     Shery.imageEffect("#image-div", {
-        style: 5,
-        config: { "noiseDetail": { "value": 7.44, "range": [0, 100] }, "distortionAmount": { "value": 2.98, "range": [0, 10] }, "scale": { "value": 36.36, "range": [0, 100] }, "speed": { "value": 0.79, "range": [0, 1] }, "zindex": { "value": -9996999, "range": [-9999999, 9999999] }, "aspect": { "value": 0.7272695760684946 }, "ignoreShapeAspect": { "value": true }, "shapePosition": { "value": { "x": 0, "y": 0 } }, "shapeScale": { "value": { "x": 0.5, "y": 0.5 } }, "shapeEdgeSoftness": { "value": 0, "range": [0, 0.5] }, "shapeRadius": { "value": 0, "range": [0, 2] }, "currentScroll": { "value": 0 }, "scrollLerp": { "value": 0.07 }, "gooey": { "value": true }, "infiniteGooey": { "value": false }, "growSize": { "value": 2.5, "range": [1, 15] }, "durationOut": { "value": 1, "range": [0.1, 5] }, "durationIn": { "value": 1.5, "range": [0.1, 5] }, "displaceAmount": { "value": 0.5 }, "masker": { "value": false }, "maskVal": { "value": 1, "range": [1, 5] }, "scrollType": { "value": 0 }, "geoVertex": { "range": [1, 64], "value": 1 }, "noEffectGooey": { "value": true }, "onMouse": { "value": 0 }, "noise_speed": { "value": 1.15, "range": [0, 10] }, "metaball": { "value": 0.44, "range": [0, 2] }, "discard_threshold": { "value": 0.49, "range": [0, 1] }, "antialias_threshold": { "value": 0.01, "range": [0, 0.1] }, "noise_height": { "value": 0.38, "range": [0, 2] }, "noise_scale": { "value": 10.69, "range": [0, 100] } },
+        style: 6,
+        config: { "noiseDetail": { "value": 7.44, "range": [0, 100] }, "distortionAmount": { "value": 5.88, "range": [0, 10] }, "scale": { "value": 36.36, "range": [0, 100] }, "speed": { "value": 0.46, "range": [0, 1] }, "zindex": { "value": -9996999, "range": [-9999999, 9999999] }, "aspect": { "value": 0.7272695760684946 }, "ignoreShapeAspect": { "value": true }, "shapePosition": { "value": { "x": 0, "y": 0 } }, "shapeScale": { "value": { "x": 0.5, "y": 0.5 } }, "shapeEdgeSoftness": { "value": 0, "range": [0, 0.5] }, "shapeRadius": { "value": 0, "range": [0, 2] }, "currentScroll": { "value": 0 }, "scrollLerp": { "value": 0.07 }, "gooey": { "value": true }, "infiniteGooey": { "value": false }, "growSize": { "value": 4, "range": [1, 15] }, "durationOut": { "value": 1, "range": [0.1, 5] }, "durationIn": { "value": 1.5, "range": [0.1, 5] }, "displaceAmount": { "value": 0.5 }, "masker": { "value": false }, "maskVal": { "value": 1, "range": [1, 5] }, "scrollType": { "value": 0 }, "geoVertex": { "range": [1, 64], "value": 1 }, "noEffectGooey": { "value": true }, "onMouse": { "value": 0 }, "noise_speed": { "value": 0.46, "range": [0, 10] }, "metaball": { "value": 0.41, "range": [0, 2] }, "discard_threshold": { "value": 0.78, "range": [0, 1] }, "antialias_threshold": { "value": 0.01, "range": [0, 0.1] }, "noise_height": { "value": 0.29, "range": [0, 2] }, "noise_scale": { "value": 14.5, "range": [0, 100] } },
         gooey: true,
     });
 }
-// animationPageOne()
+animationPageOne()
 crsr();
 loco();
-sheryJsAnimation()
+sheryJsAnimation();
+
+document.querySelector('#inoxentH1').addEventListener('mousemove', (dets) => {
+    gsap.to('#flag', {
+        x: dets.x,
+        y: dets.y,
+        ease: "power4.out"
+    })
+});
+document.querySelector('#inoxentH1').addEventListener('mouseenter', (dets) => {
+    gsap.to('#flag', {
+        opacity:1
+    })
+});
+document.querySelector('#inoxentH1').addEventListener('mouseleave', (dets) => {
+    gsap.to('#flag', {
+        opacity:0
+    })
+});
 
 Shery.makeMagnet("#nav-part2 h5", {});

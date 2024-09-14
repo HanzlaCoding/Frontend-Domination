@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   color: white;
-  /* cursor: none; */
+  cursor: none;
 }
 
 html,
@@ -45,6 +45,7 @@ main {
 .line h2 {
   font-family: "Plain Light";
   font-size: 6.3vw;
+  font-weight: 400;
   text-transform: uppercase;
   animation-name: noFill;
   animation-duration: 2s;
@@ -87,6 +88,7 @@ main {
 .line1-part1 h5 {
   font-family: "Silk Serif";
   font-size: 3.5vw;
+  font-weight: 400;
 }
 
 .line1-part1 h5 {
@@ -96,7 +98,7 @@ main {
 
 #page1 {
   width: 100%;
-  height: 115vh;
+  height: 120vh;
   background-color: #151515;
   overflow: hidden;
 }
@@ -105,8 +107,8 @@ main {
   padding: 3.5vw 5vw;
   font-family: "Plain Light";
   font-weight: 500;
-  display: flex;
   justify-content: space-between;
+  display: flex;
   align-items: center;
 }
 
@@ -131,10 +133,10 @@ main {
   display: flex;
   align-items: center;
 }
-
+/* 
 #hero:nth-child(2) {
-  margin-top: zZ0vh;
-}
+  margin-top: 20vh;
+} */
 
 #page1 .hero h1 {
   font-size: 7.5vw;
@@ -149,9 +151,10 @@ main {
   font-size: 4vw;
   position: absolute;
   left: 20%;
+  top: 17%;
 }
 
-#page1 #hero3 h1 {
+#inoxentH1HoMein h1 {
   font-size: 7.5vw;
   line-height: 8vw;
   text-transform: uppercase;
@@ -182,10 +185,10 @@ main {
 
 #page2 {
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   overflow: hidden;
   background-color: #151515;
-  /* padding: 5vh; */
+  margin-bottom: 28vw;
 }
 
 #page2 #video-wrapper {
@@ -272,39 +275,137 @@ main {
 }
 
 #image-div-container {
-  background: red;
+  /* background: red; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
   padding: 1vw;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 #image-div {
+  height: 40vw;
+  width: 30vw;
+  background-color: blue;
+  position: relative;
+  margin: 2vw;
+}
+
+#image-div:nth-child(1) {
   height: 33vw;
   width: 24vw;
   background-color: blue;
   position: relative;
-  overflow: hidden;
+  margin: 2vw;
 }
 
-/* #image-div-wrapper{
-  position: relative;
-  width: 25.5%;
-  height: 70%;
+#image-div:nth-child(6) {
+  height: 45vw;
+  width: 30vw;
   background-color: blue;
+  position: relative;
+  margin: 2vw;
 }
 
-#image-wrapper-h1{
+#page3-circle1 {
+  height: 20vw;
+  position: relative;
+  width: 20vw;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+  margin-left: 10vw;
+}
+
+#page3-circle1 svg {
+  height: 30%;
+}
+
+#circle-in {
+  height: 100%;
   width: 100%;
-  background-color: greenyellow;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scale: 0;
+  border-radius: 50%;
+  transition: all ease 0.3s;
 }
 
-#image-wrapper-h1{
+#page3-circle1 #circle-in p {
+  font-size: 0.9vw;
+  font-family: "Plain Light";
+  color: #212121;
+  width: 80%;
+  transition: all ease 0.3s;
+  transition-delay: 0.6s;
+  opacity: 0;
+}
+
+#page3-circle1:hover #circle-in {
+  scale: 1;
+}
+
+#page3-circle1:hover #circle-in p {
+  scale: 1;
+  opacity: 1;
+}
+
+#page3-circle2 {
+  position: relative;
+  height: 20vw;
+  width: 20vw;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page3-circle2 svg {
+  height: 30%;
+}
+
+#circle-in {
+  height: 100%;
+  width: 100%;
   position: absolute;
-  font-size: 3vw;
-} */
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  scale: 0;
+  border-radius: 50%;
+  transition: all ease 0.3s;
+}
+
+#page3-circle2 #circle-in p {
+  font-size: 0.9vw;
+  font-family: "Plain Light";
+  color: #212121;
+  /* width: 80%; */
+  transition: all ease 0.3s;
+  transition-delay: 0.6s;
+  opacity: 0;
+}
+
+#page3-circle2:hover #circle-in {
+  scale: 1;
+}
+
+#page3-circle2:hover #circle-in p {
+  scale: 1;
+  opacity: 1;
+}
 
 #image-div img {
   height: 100%;
@@ -320,7 +421,7 @@ main {
 
 #page4 {
   width: 100%;
-  min-height: 150vh;
+  min-height: 170vh;
   background-color: #151515;
   position: relative;
 }
@@ -337,7 +438,7 @@ main {
   width: 72vw;
   margin-left: 25vw;
   position: relative;
-  min-height: 200vh;
+  min-height: 220vh;
   /* background-color: red; */
 }
 
@@ -362,35 +463,23 @@ main {
   font-weight: 500;
 }
 
-#flex-wrapper {
-  /* position: relative; */
+#flex-wrapper{
   width: 100%;
-  min-height: 100vh;
-  /* background-color: grey; */
+  /* background-color: red; */
+  margin-top: 5vh;
+  position: relative;
   display: flex;
 }
 
-#flex-wrapper #image {
-  position: relative;
-  width: 50%;
-  height: 100vh;
-  margin-top: 5vw;
-  /* background-color: red; */
-}
-
-#flex-wrapper #image img {
-  position: absolute;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  object-position: center;
+#flex-wrapper img{
+  width: 75%;
 }
 
 #para {
-  margin-top: 4.7vw;
-  width: 40%;
+  margin-left: -20%;
+  width: 60%;
   height: fit-content;
-  /* background-color: red; */
+  /* background-color: blue; */
 }
 
 #para p {
@@ -405,8 +494,8 @@ main {
   height: 65vh;
   background: #3f7df4;
   position: absolute;
-  right: 8%;
-  top: 70%;
+  right: 4%;
+  top: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -437,8 +526,8 @@ main {
 
 #sup-parent .elem2 {
   width: 60%;
-  height: 100%;
   display: flex;
+  height: 100%;
   align-items: center;
 }
 
@@ -532,7 +621,7 @@ footer {
   /* margin-top: 20vw; */
   width: 100%;
   min-height: 100vh;
-  padding: 20vw 0vw 0vw 28vw;
+  padding: 16vw 0vw 0vw 28vw;
   background-color: #151515;
 }
 
@@ -562,9 +651,9 @@ footer .underline {
   height: 80%;
   /* background-color: blue; */
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  padding: 5vw 0vw;
+  padding: 5vw 1vw;
   border-bottom: 1px solid #fff;
 }
 
@@ -581,6 +670,22 @@ footer .underline {
 }
 
 footer > h5 {
+  font-size: 1.1vw;
   font-family: "Plain Light";
   padding: 2.5vw 0vw;
+  font-weight: 400;
+}
+
+#flag {
+  height: 25vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+#inoxentH1 {
+  z-index: 999;
+  position: relative;
 }
