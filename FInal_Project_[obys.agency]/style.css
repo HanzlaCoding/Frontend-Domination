@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   color: white;
-  cursor: none;
+  /* cursor: none; */
 }
 
 html,
@@ -172,6 +172,10 @@ main {
   height: 3vw;
   z-index: 9999;
   position: fixed;
+  transform-origin: center;
+  top: 0%;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
   border-radius: 50%;
   border: 1px solid #fff;
 }
@@ -667,6 +671,15 @@ footer .underline {
   font-size: 1.4vw;
   font-family: "Plain Light";
   font-weight: 600;
+  line-height: 2vw;
+}
+
+#email-box{
+  overflow:hidden;
+  z-index: 999;
+  width: 100%;
+  height: 2vw;
+  /* background-color: red; */
 }
 
 footer > h5 {

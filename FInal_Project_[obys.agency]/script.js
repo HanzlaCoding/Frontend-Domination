@@ -1,60 +1,60 @@
-function animationPageOne(){
+function animationPageOne() {
     var tl = gsap.timeline();
-tl.from('.line h1', {
-    y: 150,
-    stagger: 0.1,
-    duration: 0.6,
-    delay: 0.2,
-    ease: "expo.out",
-    opacity: 0
-})
+    // tl.from('.line h1', {
+    //     y: 150,
+    //     stagger: 0.1,
+    //     duration: 0.6,
+    //     delay: 0.2,
+    //     ease: "expo.out",
+    //     opacity: 0
+    // })
 
-tl.from('.line-part1, .line h2', {
-    opacity: 0,
-    onStart: () => {
-        const l1p1 = document.querySelector('.line1-part1 h5');
-        // Loop of loader
-        let levelUp = 0;
-        const intId = setInterval(() => {
-            if (levelUp < 100) {
-                l1p1.innerHTML = levelUp++;
-            }
-            else {
-                l1p1.innerHTML = levelUp;
-                clearInterval(intId);
-            }
-            console.log(levelUp);
+    // tl.from('.line-part1, .line h2', {
+    //     opacity: 0,
+    //     onStart: () => {
+    //         const l1p1 = document.querySelector('.line1-part1 h5');
+    //         // Loop of loader
+    //         let levelUp = 0;
+    //         const intId = setInterval(() => {
+    //             if (levelUp < 100) {
+    //                 l1p1.innerHTML = levelUp++;
+    //             }
+    //             else {
+    //                 l1p1.innerHTML = levelUp;
+    //                 clearInterval(intId);
+    //             }
+    //             console.log(levelUp);
 
-        }, 30);
-    }
-})
+    //         }, 30);
+    //     }
+    // })
 
-tl.to('#loader', {
-    opacity: 0,
-    duration: 0.1,
-    delay: 2.8
-});
+    // tl.to('#loader', {
+    //     opacity: 0,
+    //     duration: 0.1,
+    //     delay: 2.8
+    // });
 
-tl.from('#page1', {
-    opacity: 0,
-    delay: 0.1,
-    ease: "expo.in",
-    opacity: 0,
-    duration: 0.8
-})
+    tl.from('#page1', {
+        opacity: 0,
+        delay: 0.1,
+        ease: "expo.in",
+        opacity: 0,
+        duration: 0.8
+    })
 
-tl.to('#loader', {
-    display: 'none'
-})
+    tl.to('#loader', {
+        display: 'none'
+    })
 
-tl.from(`#hero1 h1, #hero2 h1,#inoxentH1 h1,#hero4 h1`,{
-    y: 150,
-    stagger:0.1,
-    duration:0.8
-})
-tl.from('#hero1, #page2',{
-    opacity:0
-},'-=2')
+    tl.from(`#hero1 h1, #hero2 h1,#inoxentH1 h1,#hero4 h1`, {
+        y: 150,
+        stagger: 0.1,
+        duration: 0.8
+    })
+    tl.from('#hero1, #page2', {
+        opacity: 0
+    }, '-=2')
 }
 function crsr() {
     // Cursor
@@ -118,13 +118,26 @@ document.querySelector('#inoxentH1').addEventListener('mousemove', (dets) => {
 });
 document.querySelector('#inoxentH1').addEventListener('mouseenter', (dets) => {
     gsap.to('#flag', {
-        opacity:1
+        opacity: 1
     })
 });
 document.querySelector('#inoxentH1').addEventListener('mouseleave', (dets) => {
     gsap.to('#flag', {
-        opacity:0
+        opacity: 0
     })
 });
 
 Shery.makeMagnet("#nav-part2 h5", {});
+
+document.querySelector('#email-box').addEventListener('mouseenter', () => {
+    gsap.to(`#email-box h5`, {
+        y: -30,
+        duration: .4
+    });
+});
+
+document.querySelector('#email-box').addEventListener('mouseleave', () => {
+    gsap.to(`#email-box h5`, {
+        y: 0
+    });
+});
