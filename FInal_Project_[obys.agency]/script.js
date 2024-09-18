@@ -1,39 +1,39 @@
 function animationPageOne() {
     var tl = gsap.timeline();
-    // tl.from('.line h1', {
-    //     y: 150,
-    //     stagger: 0.1,
-    //     duration: 0.6,
-    //     delay: 0.2,
-    //     ease: "expo.out",
-    //     opacity: 0
-    // })
+    tl.from('.line h1', {
+        y: 150,
+        stagger: 0.1,
+        duration: 0.6,
+        delay: 0.2,
+        ease: "expo.out",
+        opacity: 0
+    })
 
-    // tl.from('.line-part1, .line h2', {
-    //     opacity: 0,
-    //     onStart: () => {
-    //         const l1p1 = document.querySelector('.line1-part1 h5');
-    //         // Loop of loader
-    //         let levelUp = 0;
-    //         const intId = setInterval(() => {
-    //             if (levelUp < 100) {
-    //                 l1p1.innerHTML = levelUp++;
-    //             }
-    //             else {
-    //                 l1p1.innerHTML = levelUp;
-    //                 clearInterval(intId);
-    //             }
-    //             console.log(levelUp);
+    tl.from('.line-part1, .line h2', {
+        opacity: 0,
+        onStart: () => {
+            const l1p1 = document.querySelector('.line1-part1 h5');
+            // Loop of loader
+            let levelUp = 0;
+            const intId = setInterval(() => {
+                if (levelUp < 100) {
+                    l1p1.innerHTML = levelUp++;
+                }
+                else {
+                    l1p1.innerHTML = levelUp;
+                    clearInterval(intId);
+                }
+                console.log(levelUp);
 
-    //         }, 30);
-    //     }
-    // })
+            }, 30);
+        }
+    })
 
-    // tl.to('#loader', {
-    //     opacity: 0,
-    //     duration: 0.1,
-    //     delay: 2.8
-    // });
+    tl.to('#loader', {
+        opacity: 0,
+        duration: 0.1,
+        delay: 2.8
+    });
 
     tl.from('#page1', {
         opacity: 0,
