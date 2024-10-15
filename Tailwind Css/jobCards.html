@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-[#e5e5e5]">
+    <div class="main xw-full h-screen mx-auto px-20 py-20 font-['Helvetica_Now_Display'] flex flex-wrap gap-16">
+        <div class="card w-[280px] h-[310px] rounded-lg p-2 bg-zinc-50 shadow-lg">
+            <div class="image bg-amber-50 w-full h-60 rounded-t-md p-2">
+                <div class="line-top h-5 flex justify-between">
+                    <h4 class="font-[500]">120$/hr</h4>
+                    <h4><i class="ri-bookmark-line text-2xl"></i></h4>
+                </div>
+                <div class="line-bottom mt-5">
+                    <h1 class="text-4xl leading-10">Senior UI<br>Developer</h1>
+                </div>
+                <div class="arrow w-full min-h-2">
+                    <i class="ri-arrow-right-line text-xl flex justify-end"></i>
+                </div>
+            </div>
+            <div class="textDiv w-full h-16 flex items-center justify-between bg-zinc-50">
+                <div class="wrapper flex gap-5">
+                    <div class="imgDiv w-10 h-10 rounded-[60px] overflow-hidden">
+                        <img class="object-cover h-10"
+                            src="https://www.logodesignteam.com/blog/wp-content/uploads/2017/05/Google_Logo_Designs_Over_the_Year.jpg"
+                            alt="Google">
+                    </div>
+                    <h4 class="leading-5">Senior Web <br>Developer</h4>
+                </div>
+                <button class="w-14 h-8 1 bg-zinc-800 text-white rounded-2xl">View</button>
+            </div>
+        </div>
+        <script>
+            const employees = [
+                {
+                    usePerHr: "120$/hr",
+                    role: "Senior Web Developer",
+                    image: "https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png",
+                    sameRole: "Senior Web Developer",
+                    tailwindColor: "bg-amber-50"
+                },
+                {
+                    usePerHr: "150$/hr",
+                    role: "Project Manager",
+                    image: "https://w7.pngwing.com/pngs/489/527/png-transparent-amazon-logo-amazon-com-retail-customer-service-walmart-amazon-logo-thumbnail.png",
+                    sameRole: "Project Manager",
+                    tailwindColor: "bg-blue-50"
+                },
+                {
+                    usePerHr: "100$/hr",
+                    role: "Junior Web Developer",
+                    image: "https://w7.pngwing.com/pngs/36/959/png-transparent-meta-logo-facebook-social-media-chat-message-communication-icon-thumbnail.png",
+                    sameRole: "Junior Web Developer",
+                    tailwindColor: "bg-red-50"
+                },
+                {
+                    usePerHr: "130$/hr",
+                    role: "UI/UX Designer",
+                    image: "https://www.freeiconspng.com/thumbs/apple-logo-icon/apple-icon-21.png",
+                    sameRole: "UI/UX Designer",
+                    tailwindColor: "bg-green-50"
+                },
+                {
+                    usePerHr: "140$/hr",
+                    role: "Data Scientist",
+                    image: "https://www.pngplay.com/wp-content/uploads/9/Microsoft-Logo-PNG-HD-Quality.png",
+                    sameRole: "Data Scientist",
+                    tailwindColor: "bg-indigo-50"
+                },
+                {
+                    usePerHr: "110$/hr",
+                    role: "Quality Assurance Engineer",
+                    image: "https://calendarmedia.blob.core.windows.net/assets/5a76b9de-ec7c-48fa-84f6-40ffef506b9f.jpg",
+                    sameRole: "Quality Assurance Engineer",
+                    tailwindColor: "bg-purple-50"
+                },
+                {
+                    usePerHr: "200$/hr",
+                    role: "Cloud Architect",
+                    image: "https://via.placeholder.com/150x150.png?text=Company+Logo+7",
+                    sameRole: "Cloud Architect",
+                    tailwindColor: "bg-orange-50"
+                },
+                {
+                    usePerHr: "95$/hr",
+                    role: "Content Writer",
+                    image: "https://via.placeholder.com/150x150.png?text=Company+Logo+8",
+                    sameRole: "Content Writer",
+                    tailwindColor: "bg-pink-50"
+                },
+                {
+                    usePerHr: "18$0/hr",
+                    role: "DevOps Engineer",
+                    image: "https://via.placeholder.com/150x150.png?text=Company+Logo+9",
+                    sameRole: "DevOps Engineer",
+                    tailwindColor: "bg-teal-50"
+                },
+                {
+                    usePerHr: "160$/hr",
+                    role: "Product Owner",
+                    image: "https://via.placeholder.com/150x150.png?text=Company+Logo+10",
+                    sameRole: "Product Owner",
+                    tailwindColor: "bg-lime-50"
+                },
+                {
+                    usePerHr: "900$/hr",
+                    role: "Technical Support Specialist",
+                    image: "https://via.placeholder.com/150x150.png?text=Company+Logo+11",
+                    sameRole: "Technical Support Specialist",
+                    tailwindColor: "bg-cyan-50"
+                },
+                {
+                    usePerHr: "115$/hr",
+                    role: "Mobile App Developer",
+                    image: "https://via.placeholder.com/150x150.png?text=Company+Logo+12",
+                    sameRole: "Mobile App Developer",
+                    tailwindColor: "bg-rose-50"
+                },
+                {
+                    usePerHr: "105$/hr",
+                    role: "Network Engineer",
+                    image: "https://via.placeholder.com/150x150.png?text=Company+Logo+13",
+                    sameRole: "Network Engineer",
+                    tailwindColor: "bg-violet-50"
+                },
+                {
+                    usePerHr: "170$/hr",
+                    role: "Cybersecurity Analyst",
+                    image: "https://via.placeholder.com/150x150.png?text=Company+Logo+14",
+                    sameRole: "Cybersecurity Analyst",
+                    tailwindColor: "bg-fuchsia-50"
+                },
+                {
+                    usePerHr: "125$/hr",
+                    role: "System Administrator",
+                    image: "https://via.placeholder.com/150x150.png?text=Company+Logo+15",
+                    sameRole: "System Administrator",
+                    tailwindColor: "bg-yellow-50"
+                }
+            ];
+
+            const employe = employees.map((items, index) => {
+                const { usePerHr, role, image, sameRole, tailwindColor } = items;
+                return (
+                    `<div class="card hover:-translate-y-2 transition-all duration-200 w-[280px] h-[310px] rounded-lg p-2 bg-zinc-50 shadow-lg">
+                <div class="image ${tailwindColor} w-full h-60 rounded-t-md p-2">
+                    <div class="line-top h-5 flex justify-between">
+                        <h4 class="font-[500]">${usePerHr}</h4>
+                        <h4><i class="ri-bookmark-line text-2xl"></i></h4>
+                    </div>
+                    <div class="line-bottom mt-5">
+                        <h1 class="text-4xl leading-10">${role}</h1>
+                    </div>
+                    <div class="arrow w-full min-h-2">
+                        <i class="ri-arrow-right-line text-xl flex justify-end"></i>
+                    </div>
+                </div>
+                <div class="textDiv w-full h-16 flex items-center justify-between bg-zinc-50">
+                    <div class="wrapper flex gap-5">
+                        <div class="imgDiv w-10 h-10 rounded-[60px] overflow-hidden">
+                            <img class="object-cover h-10"
+                                src=${image}
+                                alt="Google">
+                        </div>
+                        <h4 class="leading-5">${sameRole}</h4>
+                    </div>
+                    <button class="w-14 h-8 1 bg-zinc-800 text-white rounded-2xl">View</button>
+                </div>
+            </div>`
+                )
+            })
+            document.querySelector('.main').innerHTML = employe;
+        </script>
+</body>
+
+</html>
