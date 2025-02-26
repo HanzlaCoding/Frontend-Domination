@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Promises In JavaScript</h1>
+    <script>
+        const token = new Promise((resolve, reject) => {
+            fetch(`https://randomuser.me/api/`)
+                .then(raw => raw.json())
+                .then(result => {
+                    if (result.results[0].gender == "male") {
+                        resolve();
+                    } else {
+                        reject();
+                    }
+                })
+        });
+        // Our part
+        // We use it when something take time
+        token
+            .then(() => console.log('green button pressed'))
+            .catch(() => console.log('red button pressed'))
+    </script>
+</body>
+
+</html>

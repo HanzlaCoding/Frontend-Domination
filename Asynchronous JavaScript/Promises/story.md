@@ -1,0 +1,3 @@
+# Promises
+Promises kya hein?
+> Kch code socho jisme async code ho mtlb ye side stack me jaye ga or whan execute hoga or baad me chalega main stack ke ab ye socho ye soch ke apne i code ko likha hai iska answer kabhi ayega sir aisa bhi ho skta ha ke iska answer na aaye.Promise kya hia, Asa smjho ke ap promise ke andar koi async code lkhdo jo mann me aaye or promise apko ik token dea ha or us token pr by def likha hota ha waiting., token pr do events hote hein mainly ek event ka naam ha then aur ik ka naam ha catch, agar aapka data aagaya to token pe completed likha jaye a waitingki jaga and then chaly ga or agar data me issue to catch chalay ga and waiting ki jaga reject likha jaye ga or completed ki jaga resolve likhe ga.

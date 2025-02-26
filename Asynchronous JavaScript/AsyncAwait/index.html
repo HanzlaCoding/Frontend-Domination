@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async Await In JS</h1>
+    <script>
+        // koi bhi function bna lo and uske andar jo aye wo async code lkhdo, ap jb async likhte ho to baad wali line pehle chal jaati hai kyuki async side stack pe hota hai aur baad wali line agr async ke basis pr hui to apka code fail ho jaye ga, wo isliye kuki apka code depend krta ha async codepr jo ki baad me chalega sync code chalne ke baad
+
+        // with async await ap async code bhi aise likh skte ho jaisa ki ap normal synchronous code likh rhe ho
+
+        async function abcd(){
+            const res = await fetch(`https://randomuser.me/api/`);
+            result = await res.json()
+            console.log(result);
+        }
+        abcd();
+    </script>
+</body>
+</html>

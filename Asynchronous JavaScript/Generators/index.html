@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Geneators In JS</h1>
+    <script>
+        // ap execution ko pausa kr skte ho and bol skte ho ki ab agle ste kro aur phir ap step jb bhi chahein chla lein
+        function* printNumbers() {
+            for (var i = 1; i < 11; i++) {
+                yield i;
+            }
+        }
+        const ans = printNumbers();
+        ans.next()
+        ans.next()
+        ans.next()
+        ans.next()
+        ans.next()
+        ans.next()
+        ans.next()
+        ans.next()
+        ans.next()
+        console.log(ans.next().value)
+    </script>
+</body>
+
+</html>

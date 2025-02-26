@@ -9,5 +9,3 @@ var btn = document.querySelector('button');
 // div.style.color = 'red';
 // div.style.fontSize = '150px';
 // div.style.fontFamily = 'Gilroy';
-
-h1.classList.add('h1Makeup')

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Callback in JS
+    <script>
+        // callback is a simple function which is with something special. thora special ye hai ke ise pass kia jata hai as argument jb particular async code chal jaye.
+        // call back ik fun ction ha jise kisi or function me pass krte hein then or jb hm us function ko call krte hein then us callback ko call krte hein.
+        function abcd(a,b){
+            b()
+        }
+        abcd(1, ()=>console.log('callback chala')
+        )
+
+        function getData(url, callback) {
+            fetch(url)
+            .then(raw => raw.json())
+            .then(res => {
+                callback(res)
+            })
+        }
+        getData(`https://randomuser.me/api/`,(result)=>{
+            const user = result.results[0];
+            console.log(user.name.first,user.email, user.gender);
+        })
+    </script>
+</body>
+</html>
